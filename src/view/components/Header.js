@@ -7,6 +7,7 @@ class Header extends Component {
             classState: localStorage.getItem("classNameButton")
         }
 
+
     }
 
     switchClass = () => {
@@ -29,7 +30,7 @@ class Header extends Component {
             <nav>
                 <div class="nav-wrapper">
 
-                    <span clasName="brand-logo">Bit People</span>
+                    <a href="#!" clasName="brand-logo">Bit People</a>
                     <ul class="right hide-on-med-and-down">
 
                         <li><a onClick={this.props.hendler} ><i className={this.switchClass()}></i></a></li>

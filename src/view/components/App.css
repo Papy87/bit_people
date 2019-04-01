@@ -1,0 +1,15 @@
+.female{
+    /* background: #ffebee red lighten-5; */
+    background: yellowgreen;
+}
+.nav-wrapper{
+    text-align: center;
+    font-size: 30px;
+}
+.row{
+    width: 90%;
+    margin: 0 auto;
+}
+h5{
+    margin-left: 5%;
+}

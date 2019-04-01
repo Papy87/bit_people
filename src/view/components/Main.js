@@ -8,20 +8,18 @@ import React from "react"
 // }
 
 const Main = (props) => {
-
+ 
     console.log(props.users)
 
-    if (props.users.gender === "female") {
-
-    }
+  
 
     const listView = (props.users).map((user) => {
         return (
-            <ul className={`collection ${user.gender}`}  >
-                <li className={`collection-item avatar ${user.gender}`}>
+            <ul className="collection"   >
+                <li className={`collection-item avatar ${user.gender==="female" ? "#ffebee red lighten-5":""}`}>
                     <img src={user.picture} alt="" className="circle" />
                     <span className="title ">{user.name.first} {user.name.last}</span>
-                    <p><i className="fas fa-envelope-square"></i>{user.email} <br />
+                    <p><i class="fas fa-envelope"></i> email:{user.email} <br />
                         <i class="fas fa-birthday-cake"></i> {new Date(user.birthday).getDay()} .{new Date(user.birthday).getMonth()} .{new Date(user.birthday).getFullYear()}
                     </p>
 
@@ -38,8 +36,8 @@ const Main = (props) => {
                         <img src={user.picture} />
                         <span className="card-title">{user.name.first} </span>
                     </div>
-                    <div className="card-content">
-                        <p><i className="fas fa-envelope-square"></i>{user.email} <br />
+                    <div className={`card-content ${user.gender==="female" ? "#ffebee red lighten-5":""} `}>
+                        <p><i class="fas fa-envelope"></i> email:{user.email} <br />
                             <i class="fas fa-birthday-cake"></i> {new Date(user.birthday).getDay()} .{new Date(user.birthday).getMonth()} .{new Date(user.birthday).getFullYear()}
                         </p>
 
