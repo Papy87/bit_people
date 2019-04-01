@@ -37,8 +37,8 @@ const Main = (props) => {
                         <span className="card-title">{user.name.first} </span>
                     </div>
                     <div className={`card-content ${user.gender==="female" ? "#ffebee red lighten-5":""} `}>
-                        <p><i class="fas fa-envelope"></i> email:{user.email} <br />
-                            <i class="fas fa-birthday-cake"></i> {new Date(user.birthday).getDay()} .{new Date(user.birthday).getMonth()} .{new Date(user.birthday).getFullYear()}
+                        <p>{user.email} <br />
+                             Date of Birth: {new Date(user.birthday).getDay()} .{new Date(user.birthday).getMonth()} .{new Date(user.birthday).getFullYear()}
                         </p>
 
                     </div>
